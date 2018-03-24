@@ -1,0 +1,140 @@
+html body {
+	margin: 0;
+	display: block;
+	font-family: Trebuchet MS, sans-serif;
+}
+
+.header {
+	background-image: url("../img/Indianapolis-Skyline-iLikeToo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 17%;
+	height: 260px;
+}
+
+.header h1 {
+	font-family: Snell Roundhand, cursive;
+	font-size: 60px;
+	font-weight: bold;
+	padding: 0 0 40px;
+	margin: 80px 0 0 40px;
+	display: inline-block;
+	color: #000000;
+}
+
+.header ul {
+	list-style: none;
+	vertical-align: top;
+	clear: left;
+	margin-top: 5px;
+	padding-right: 15px;
+}
+
+.header li a:hover {
+	border: 3px solid #EEEEEE;
+	color: #337ab7;
+}
+
+.header li a {
+	background: transparent;
+	border-radius: 4px;
+	padding: 10px 20px;
+	margin: 5px 5px;
+	border: 3px solid rgb(137, 72, 171);
+	color: #FFC84A;
+	font-weight: bold;
+}
+
+.header .nav-pills li.active a, .header .nav-pills li.active a:focus {
+	background-color: #FFC84A;
+	color: #337ab7;
+	border-radius: 4px;
+	border: 3px solid #FFC84A;
+}
+
+.main {
+	background-color: #ADAADE;
+	border-top: 4px solid #FFC84A;
+	border-bottom: 4px solid #FFC84A;
+}
+
+.main h3 {
+	text-align: center;
+}
+
+.main img {
+	border: 4px solid #FFC84A;
+	border-radius: 4px;
+	display: block;
+	margin: auto;
+	width: 396px;
+	height: 396px;
+}
+
+.main a {
+	display: block;
+	margin: auto;
+	width: 396px;
+	height: 396px;
+}
+
+.bottom-row {
+	margin-bottom: 30px;
+}
+
+.footer {
+	background-color: #0B085D;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+}
+
+.footer a {
+	color: #FFFFFF;
+}
+
+.footer a:hover, .footer a:focus {
+	color: #FFFFFF;
+}
+
+.coming-soon {
+	background-image: url("../img/coming soon.jpg");
+	background-size: 600px 600px;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 720px;
+	display: block;
+	margin: auto;
+
+}
+
+#headshot {
+	width: 398px;
+	height: 405px;
+	margin-top: 20px;
+	border: 10px solid #0B085D;
+	border-radius: 10px;
+}
+
+#search {
+	width: 300px;
+	color: black;
+}
+
+ul.ui-autocomplete {
+    list-style: none;
+    padding: 6px 12px;
+}
+
+.ui-helper-hidden-accessible {
+	display: none;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+}
