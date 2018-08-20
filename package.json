@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "nodeunit": "^0.11.1",
+    "jquery": "^2.0.0"
+  },
+  "scripts": {
+    "test": "mocha -- **/js/*.mocha.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jctraylor/Portfolio.git"
+  },
+  "author": "Jeremy Traylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jctraylor/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jctraylor/Portfolio#readme"
+}
