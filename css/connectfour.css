@@ -1,0 +1,34 @@
+.gameboard {
+	display: none;
+}
+.cell {
+	background-color: #408bc9;
+/*	border: 5px solid #408bc9;
+*/	height: 100px;
+	width: 100px;
+	display: inline-block;
+	pointer-events: none;
+}
+button {
+	border-radius: 5px;
+}
+.drop {
+	width: 100px;
+	display: inline-block;
+}
+.circle {
+	border-radius: 50%;
+	background-color: white;
+	height: 100px;
+	width: 100px;
+	pointer-events: none;
+}
+.column {
+	width: 110px;
+	border: 5px solid white;
+	float: left;
+}
+.column:hover {
+	border: 5px solid rgb(76, 219, 119);
+	cursor: pointer;
+}
