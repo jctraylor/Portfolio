@@ -32,9 +32,12 @@ var main = function() {
         winners = [num, arr[index+diff]];
       }
     });
-    return winners.sort();
+    return winners.sort(function (a, b) {
+    	return a-b;
+    });
 
   }
+
 };
  
 $(document).ready(main);
