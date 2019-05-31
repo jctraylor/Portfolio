@@ -1,0 +1,21 @@
+{
+  "name": "portfolio",
+  "version": "0.0.1",
+  "description": "practice projects",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jctraylor/Portfolio.git"
+  },
+  "author": "Jeremy Traylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jctraylor/Portfolio/issues"
+  },
+  "homepage": "https://github.com/jctraylor/Portfolio#readme"
+}

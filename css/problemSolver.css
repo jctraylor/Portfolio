@@ -1,0 +1,64 @@
+html body {
+	margin: 0;
+	display: block;
+	font-family: Comic Sans MS, sans-serif;
+}
+
+.header {
+	background-image: url("../img/math-is-fun2.jpeg");
+	height: 172px;
+}
+
+.main {
+	height: 300px;
+}
+
+.main-text {
+	padding-top: 50px;
+}
+
+.answer-value {
+	display: none;
+}
+
+.main button {
+	border-radius: 10%;
+	background-color: #669060;
+	color: #FFFFFF;
+	border: 5px;
+	border-color: black;
+}
+
+.main button:hover {
+	border-radius: 10%;
+	border: 5px;
+	border-color: black;
+	background-color: #669060;
+	color: #FFFFFF;
+}
+
+img {
+	width: 300px;
+	float: left;
+}
+
+input {
+	width: 50px;
+}
+
+.footer {
+	background-color: #669060;
+	color: #FFFFFF;
+	padding-bottom: 20px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer a {
+	color: #FFFFFF;
+}
+
+.footer a:hover, .footer a:focus {
+	color: #FFFFFF;
+}
