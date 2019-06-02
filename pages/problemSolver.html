@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Fiddle Page</title>
+    <title>Problem Solver</title>
     <link rel="stylesheet" type="text/css" href="../css/problemSolver.css"/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,15 +31,34 @@
             <div class="main-text">
                 <h1 class="name">Need help with your prodigy challenge?</h1>
                 <form class="question">
-                    The sum of the two numbers is: <input type="text" name="sum"><br>
-                    The difference of the two numbers is: <input type="text" name="diff"><br>
+                    <label>
+                        The sum of the two numbers is: <input type="text" name="sum"><br>
+                    </label>
+                    <label>
+                        The difference of the two numbers is: <input type="text" name="diff"><br>
+                    </label>
                 </form>
-                <button class="submit">Submit</button>
-                <div class="answers">
-                    <p>The larger number is: [click submit to see]</p>
-                    <p>The smaller number is: [click submit to see]</p>
+                <button type="button" class="btn btn-info btn-lg submit">Show Answers</button>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title"></h4>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default close-modal" data-dismiss="modal">Close</button>
                 </div>
             </div>
+
         </div>
     </div>
 </div>
