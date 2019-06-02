@@ -1,21 +1,23 @@
 var main = function() {
-	$('input[name="sum"]').popover({
+	let answerProvided = false;
+	let formIsValid = false;
+	let validationErrorsCount = 0;
+	let $sum = $('input[name="sum"]');
+	let $diff = $('input[name="diff"]');
+	$sum.popover({
 		trigger: 'manual',
 		content: 'The sum must be a number greater than 0 and greater than the provided difference.',
 		placement: 'top'
 	});
-	$('input[name="diff"]').popover({
+	$diff.popover({
 		trigger: 'manual',
 		content: 'The difference must be a number greater than 0 and less than the provided sum.',
 		placement: 'bottom'
 	});
-	let answerProvided = false;
-	let formIsValid = false;
-	let validationErrorsCount = 0;
   // process input when submit is clicked
   $('.submit').click(function() {
-	  let sum = Number($('input[name="sum"]').val());
-	  let diff = Number($('input[name="diff"]').val());
+	  let sum = Number($sum.val());
+	  let diff = Number($diff.val());
 
 	  validateForm(sum, diff);
 
@@ -59,31 +61,31 @@ var main = function() {
 		answerProvided = false;
 	}
 
-	function validateIndividualInput (selector) {
+	function validateIndividualInput ($input) {
 		// if input is empty or negative it is not valid
-		numVal = Number($(selector).val());
-		if ($(selector).val().length == 0 || numVal <= 0  || isNaN(numVal)) {
-			$(selector).addClass('invalid');
-			$(selector).popover('show');
+		numVal = Number($input.val());
+		if ($input.val().length == 0 || numVal <= 0  || isNaN(numVal)) {
+			$input.addClass('invalid');
+			$input.popover('show');
 			// if any input is invalid the form is invalid
 			validationErrorsCount += 1;
 		}
 		else {
 			// individual validation passes so remove red border and popover
-			$(selector).removeClass('invalid');
-			$(selector).popover('hide');
+			$input.removeClass('invalid');
+			$input.popover('hide');
 		}
 	}
 
 	function validateForm (sum, diff) {
-		// validationErrorsCount = 0;
-		validateIndividualInput('input[name="sum"]');
-		validateIndividualInput('input[name="diff"]');
+		validationErrorsCount = 0;
+		validateIndividualInput($sum);
+		validateIndividualInput($diff);
 		if (sum <= diff) {
-			$('input[name="sum"]').addClass('invalid');
-			$('input[name="diff"]').addClass('invalid');
-			$('input[name="sum"]').popover('show');
-			$('input[name="diff"]').popover('show');
+			$sum.addClass('invalid');
+			$diff.addClass('invalid');
+			$sum.popover('show');
+			$diff.popover('show');
 			validationErrorsCount += 1;
 		}
 	}

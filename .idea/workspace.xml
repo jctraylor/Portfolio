@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6169caf-e679-443e-949f-37527700a10c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/problemSolver.css" afterPath="$PROJECT_DIR$/css/problemSolver.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/problemSolver.js" afterPath="$PROJECT_DIR$/js/problemSolver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/problemSolver.html" afterPath="$PROJECT_DIR$/pages/problemSolver.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +19,8 @@
       <file leaf-file-name="problemSolver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/problemSolver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-45">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="206">
+              <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -74,6 +71,7 @@
       <find>validationerr</find>
       <find>validationerrorscount +</find>
       <find>popover</find>
+      <find>input[</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -197,12 +195,12 @@
       <updated>1521902412045</updated>
       <workItem from="1521902413345" duration="3665000" />
       <workItem from="1559323276202" duration="286000" />
-      <workItem from="1559357184157" duration="20961000" />
+      <workItem from="1559357184157" duration="21890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36149000" />
+    <option name="totallyTimeSpent" value="37078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="11" y="23" width="1425" height="877" extended-state="0" />
@@ -581,8 +579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/problemSolver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        <state relative-caret-position="206">
+          <caret line="81" column="9" lean-forward="true" selection-start-line="81" selection-start-column="9" selection-end-line="81" selection-end-column="9" />
           <folding />
         </state>
       </provider>
