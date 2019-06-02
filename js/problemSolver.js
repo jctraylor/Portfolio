@@ -23,9 +23,27 @@ var main = function() {
 
 	  formIsValid = validationErrorsCount == 0 ? true : false;
 
-    if (formIsValid) {
+    if (!formIsValid) {
+    	// hide/show popovers as needed
+	    if ($sum.hasClass('invalid')) {
+	    	$sum.popover('show');
+	    }
+	    else {
+		    $sum.popover('hide');
+	    }
+	    if ($diff.hasClass('invalid')) {
+		    $diff.popover('show');
+	    }
+	    else {
+		    $diff.popover('hide');
+	    }
+    }
+    else {
 		  // determine the answer
 	    let answers = getAnswers(sum, diff);
+	    // form is valid, hide popovers
+	    $sum.popover('hide');
+	    $diff.popover('hide');
 	    if (answers.length) {
 		    answerProvided = true;
 		    // alert(`The smaller number is ${answers[0]}\nThe larger number is ${answers[1]}`);
@@ -64,16 +82,13 @@ var main = function() {
 	function validateIndividualInput ($input) {
 		// if input is empty or negative it is not valid
 		numVal = Number($input.val());
-		if ($input.val().length == 0 || numVal <= 0  || isNaN(numVal)) {
+		if ($input.val().length === 0 || numVal <= 0  || isNaN(numVal)) {
 			$input.addClass('invalid');
-			$input.popover('show');
-			// if any input is invalid the form is invalid
 			validationErrorsCount += 1;
 		}
 		else {
 			// individual validation passes so remove red border and popover
 			$input.removeClass('invalid');
-			$input.popover('hide');
 		}
 	}
 
@@ -84,8 +99,6 @@ var main = function() {
 		if (sum <= diff) {
 			$sum.addClass('invalid');
 			$diff.addClass('invalid');
-			$sum.popover('show');
-			$diff.popover('show');
 			validationErrorsCount += 1;
 		}
 	}
