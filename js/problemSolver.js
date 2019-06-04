@@ -77,6 +77,7 @@ var main = function() {
 	function resetInputs () {
 		$('input').val('');
 		answerProvided = false;
+		$sum.focus();
 	}
 
 	function validateIndividualInput ($input) {
