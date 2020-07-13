@@ -9,8 +9,9 @@
 	display: inline-block;
 	pointer-events: none;
 }
-button {
+button.play {
 	border-radius: 5px;
+	display: none;
 }
 .drop {
 	width: 100px;
@@ -19,16 +20,35 @@ button {
 .circle {
 	border-radius: 50%;
 	background-color: white;
-	height: 100px;
-	width: 100px;
+	height: 94px;
+	width: 94px;
 	pointer-events: none;
+	margin: 3px 0px 0px 3px
+}
+
+div[data-value='red'] .circle {
+	background-color: #ff1a06;
+}
+
+div[data-value='yellow'] .circle {
+	background-color: #FFC84A;
 }
 .column {
 	width: 110px;
-	border: 5px solid white;
+	border: 5px solid #408bc9;
 	float: left;
+	background-color: #408bc9;
 }
 .column:hover {
 	border: 5px solid rgb(76, 219, 119);
 	cursor: pointer;
 }
+
+.instructionText strong {
+	color: #ff1a06;
+}
+
+.winner {
+	border: 7px solid rgb(76, 219, 119)
+}
+
